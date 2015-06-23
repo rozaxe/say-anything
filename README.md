@@ -1,4 +1,4 @@
-Say-Anything
+Say-Anything [![Build Status](https://travis-ci.org/rozaxe/say-anything.svg?branch=master)](https://travis-ci.org/rozaxe/say-anything)
 ============
 
 > Get random words.
