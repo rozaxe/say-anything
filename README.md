@@ -6,6 +6,14 @@ Say-Anything [![Build Status](https://travis-ci.org/rozaxe/say-anything.svg?bran
 The list contains 109 582 english words.
 
 
+Install
+-------
+
+```bash
+$ gem install say-anything
+```
+
+
 Usage
 -----
 
