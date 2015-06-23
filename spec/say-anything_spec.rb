@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require "../lib/say-anything"
+require "./lib/say-anything"
 
 describe SayAnything do
 
