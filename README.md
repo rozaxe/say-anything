@@ -9,7 +9,7 @@ The list contains 109 582 english words.
 Install
 -------
 
-```bash
+```
 $ gem install say-anything
 ```
 
@@ -58,7 +58,7 @@ All words.
 CLI
 ---
 
-```bash
+```
 $ say-anything --help
 Usage: say-anything [OPTION]
 
