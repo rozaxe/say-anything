@@ -2,4 +2,56 @@
 
 require 'say-anything'
 
-puts SayAnything.one
+def helper
+
+	puts %q(
+Usage: say-anything [OPTION]
+
+  -t, --times [NUMBER]
+        return times random words
+
+  -a, --all
+        return all words
+
+  -h, --help
+        display this help
+	)
+
+end
+
+if ARGV.size > 0
+
+	# Help
+	if ARGV.include? "-h" or ARGV.include? "--help"
+		helper
+
+	# Times
+	elsif ARGV.include? "-t" or ARGV.include? "--times"
+		i = ARGV.index do |x| ["-t", "--times"].include?(x) end
+
+		if ARGV[i.to_i + 1].to_i != 0
+			(SayAnything.times ARGV[i.to_i + 1].to_i).each do |x|
+				puts x
+			end
+
+		else
+			helper
+
+		end
+
+	# All
+	elsif ARGV.include? "-a" or ARGV.include? "--all"
+		SayAnything.words.each do |x|
+			puts x
+		end
+
+	# Unknow
+	else
+		puts "Unknow option"
+
+	end
+
+else
+	puts SayAnything.one
+
+end

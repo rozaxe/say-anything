@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 	s.name        = "say-anything"
-	s.version     = "1.1.0"
+	s.version     = "1.2.0"
 	s.summary     = "Rainbow !"
 	s.description = "This literally say anything."
 	s.authors     = ["Axel Rozo--Brézillac"]
@@ -8,6 +8,6 @@ Gem::Specification.new do |s|
 	s.homepage    = "https://github.com/rozaxe/say-anything"
 	s.license     = "MIT"
 
-	s.files         = `git ls-files`.split($\)
-	s.executables   = ["say-anything"]
+	s.files       = `git ls-files`.split($\)
+	s.executables = ["say-anything"]
 end
