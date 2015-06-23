@@ -54,3 +54,20 @@ Return : `Array`
 
 All words.
 
+
+CLI
+---
+
+```bash
+$ say-anything --help
+Usage: say-anything [OPTION]
+
+  -t, --times [NUMBER]
+        return times random words
+
+  -a, --all
+        return all words
+
+  -h, --help
+        display this help
+```
