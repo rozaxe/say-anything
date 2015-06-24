@@ -7,6 +7,9 @@ def helper
 	puts %q(
 Usage: say-anything [OPTION]
 
+  -p, --play
+        challenge computer at say-anything
+
   -t, --times [NUMBER]
         return times random words
 
@@ -19,11 +22,76 @@ Usage: say-anything [OPTION]
 
 end
 
+def challenge
+
+	remaining = SayAnything.words
+	remaining.shuffle!
+	found = []
+
+	puts "Good luck ! ^C to quit"
+
+	loop do
+		puts "say-anything !"
+		print "    "
+
+		begin
+			word = $stdin.gets
+
+		rescue Exception => e
+			puts "\nAlready ? I still have #{remaining.size} words in stock !"
+			break
+		end
+
+		# Clear space withing word
+		word.gsub! /\s/, ""
+
+		puts "\n"
+
+		# Return nil if not found
+		exist = remaining.delete word
+
+		if exist == nil
+			# Word not found !
+			if found.include? word
+				puts "Already said !"
+			else
+				puts "Sorry, doesn't exist"
+			end
+
+			puts "You loose =P"
+
+			# Quit game
+			break
+		end
+
+		# Computer turn
+		ia = remaining.pop
+		if ia == nil
+			# Play wins O.o
+			puts "You won ! How is that possible ?!"
+			break
+		end
+
+		# Write computer's word
+		sleep 0.4
+		puts "Computer says #{ia}"
+
+		# Can't say them anymore
+		found << word
+		found << ia
+
+	end
+
+end
+
 if ARGV.size > 0
 
 	# Help
 	if ARGV.include? "-h" or ARGV.include? "--help"
 		helper
+
+	elsif ARGV.include? "-p" or ARGV.include? "--play"
+		challenge
 
 	# Times
 	elsif ARGV.include? "-t" or ARGV.include? "--times"
