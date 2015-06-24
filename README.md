@@ -22,6 +22,7 @@ Play
 ----
 
 First of all, rule is really simple, just say anything !
+
 If you or your opponent is missing words, it's game over !
 
 Rule seems still weird ? Go watch [this](https://www.youtube.com/watch?v=nPansREhHvA) :kissing_smiling_eyes:
