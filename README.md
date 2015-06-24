@@ -3,7 +3,7 @@ Say-Anything [![Build Status](https://travis-ci.org/rozaxe/say-anything.svg?bran
 
 > Get random words.
 
-The list contains 109 582 english words.
+The list contains 109 582 english words, and can be used for whatever.
 
 
 Install
