@@ -2,6 +2,7 @@
 
 require 'say-anything'
 
+# Display string helper
 def helper
 
 	puts %q(
@@ -22,6 +23,7 @@ Usage: say-anything [OPTION]
 
 end
 
+# Start a game against the computer
 def challenge
 
 	remaining = SayAnything.all
