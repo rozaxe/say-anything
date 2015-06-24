@@ -4,7 +4,7 @@ require "./lib/say-anything"
 describe SayAnything do
 
 	it "must have a words list" do
-		r = SayAnything.words
+		r = SayAnything.all
 
 		r.must_be_instance_of Array
 		r.size.must_be :>, 0

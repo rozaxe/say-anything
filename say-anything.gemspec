@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 	s.name        = "say-anything"
-	s.version     = "2.0.0"
+	s.version     = "2.0.1"
 	s.summary     = "Rainbow !"
 	s.description = "This literally say anything."
 	s.authors     = ["Axel Rozo--Brézillac"]
