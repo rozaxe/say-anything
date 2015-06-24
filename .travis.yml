@@ -1,4 +1,8 @@
 language: ruby
 rvm:
   - 2.1.5
+
 script: ruby spec/say-anything_spec.rb
+
+notifications:
+  email: false
