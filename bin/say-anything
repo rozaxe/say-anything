@@ -24,7 +24,7 @@ end
 
 def challenge
 
-	remaining = SayAnything.words
+	remaining = SayAnything.all
 	remaining.shuffle!
 	found = []
 
@@ -109,7 +109,7 @@ if ARGV.size > 0
 
 	# All
 	elsif ARGV.include? "-a" or ARGV.include? "--all"
-		SayAnything.words.each do |x|
+		SayAnything.all.each do |x|
 			puts x
 		end
 

@@ -65,7 +65,7 @@ Return : `Array`
 Times random words.
 
 
-### .words
+### .all
 
 Return : `Array`
 

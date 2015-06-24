@@ -3,7 +3,7 @@ require "yaml"
 module SayAnything
 	@list = YAML.load_file File.dirname(__FILE__) + "/say-anything/words.yaml"
 
-	def self.words
+	def self.all
 		@list
 	end
 
